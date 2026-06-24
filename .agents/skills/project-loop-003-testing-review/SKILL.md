@@ -1,5 +1,5 @@
 ---
-name: Project_loop_003_阶段测试审查
+name: Project_loop_001_阶段测试审查
 description: >
   项目级阶段测试与审查闭环。在任何阶段/任务完成开发后必须调用。
   强制执行"全量回归 → QA 用例验证 → A/B 性能对比 → 代码审查 → 生成测试报告"五步流程。
@@ -7,7 +7,7 @@ description: >
 license: MIT
 ---
 
-# /Project_loop_003_阶段测试审查
+# /Project_loop_001_阶段测试审查
 
 GpuRelay 项目级阶段测试与审查编排器。在每一阶段/任务完成开发后，强制按照"全量回归 → QA 验证 → A/B 对比 → 代码审查 → 测试报告"五步流程执行，确保质量达标。
 
@@ -205,13 +205,13 @@ Step 5 → 报告生成后任务完成
 
 ```bash
 # 对 P1 阶段做测试审查
-/Project_loop_003_阶段测试审查 P1
+/Project_loop_001_阶段测试审查 P1
 
 # 对 P2-T5 任务做测试审查
-/Project_loop_003_阶段测试审查 P2-T5
+/Project_loop_001_阶段测试审查 P2-T5
 
 # 对全部已完成阶段做测试审查
-/Project_loop_003_阶段测试审查 P1-P2
+/Project_loop_001_阶段测试审查 P1-P2
 ```
 
 ## 与 Project_loop_000 的关系
